@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+
+/* header menu antigo*/
+
+header{
+
+    /* background-color: black; */
+    border-bottom: 1px solid white ;
+    padding-right: 5vw;
+    display: flex;
+    align-items: last center;
+    justify-content: center;
+    height: 200px;    
+    background-image: url(/images/header.jpg);
+    background-position: left; 
+  
+  }
+  
+  .col1{
+  
+    /* padding-bottom: 160px; */
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-right: 3vw;
+    /* border-bottom: 1px solid  goldenrod; */
+      /* border-bottom: 1px solid  goldenrod; */
+      /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  
+  }
+  
+  
+  .header_menu ul {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .header_menu ul li {
+    position: relative;
+    float: left;
+  }
+  
+  .header_menu ul a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .header_menu ul .menu:hover {
+  color: #f1c40f;
+  }
+  
+  nav ul li:hover > .submenu{
+    display: block;
+    background-color: #93a786; 
+  }
+  
+  .header_menu ul ul {
+    display: none;
+    position: absolute;
+    border: solid 1px #ddd;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header_menu ul ul li {
+    float: none;
+  }
+  
+  .header_menu ul ul a{
+    color: #333;
+    /* padding: 10px; */
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    border: solid 1px #ddd;
+  
+  }
+  
+  .header_menu ul ul a:hover{
+    color: black;
+    font-weight: 600;
+    background-color: rgba(76, 134, 101, 0.774);
+  }
+  
+  
+  /* header car */
+  
+  .cart {
+      position: relative;
+      background-color: transparent;
+  
+  }
+  
+  .cart-count {
+      position: absolute;
+      top: -15px;
+      right: -10px;
+      border-radius: 50%;
+      background-color: white;
+      justify-content: center;
+      width: 20px;
+      height: 25px;
+  }
+  
+  /* fin header */
+  

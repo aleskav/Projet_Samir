@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/entete.css">
+    <script src="./JS/scripts.js"></script>
+
+    <title>Contact</title>
+
+    
+   <script src="./js/index.js"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+  <!-- para manter o footer lá embaixo -->
+  <div class="wrapper">  
+
+    <div class="col1">
+    
+      <nav class="header_menu">
+        <ul>
+          <li ><a class="menu" href="index.html">Accueil</a>
+            <ul>
+              <li><a href="#">Alimentos</a></li>
+              <li><a href="#">Roupas</a></li>
+              <li><a href="#">Acessórios</a></li>
+            </ul>
+          </li>
+          <li ><a class="menu" href="produits_liste.html">Produits</a>
+            <ul class="submenu">
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Service</a></li>
+            </ul>
+          </li>
+          <li ><a class="menu" href="blog.html">Blog</a></li>
+          <li ><a class="menu" href="contact.html">Contact</a></li>
+          <li ><a class="menu" href="venue.html">Où nous trouver</a>
+            <ul class="submenu">
+              <li><a  href="#">Alimentos</a></li>
+              <li><a  href="#">Roupas</a></li>
+              <li><a  href="#">Acessórios</a></li>
+            </ul>
+          </li>
+       </ul>
+      </nav>
+
+
+
+      <div class="col3">
+        
+        
+        <button class="cart">
+          <img src="./images/car.svg" alt="Achats">
+          <span class="cart-count"><strong>0</strong></span>
+        </button>
+      </div>
+    
+    </div>
+    
+    <!-- <div class="cart">
+      <img src="./images/2.svg" alt="Car">
+      <span class="cart-count"><strong>0</strong></span>
+    </div> -->
+    
+    <header>
+    
+    <div class="logo">
+      <a href="index.html"><img src="./images/logo.svg" alt="logo"></a>
+    </div>  
+    
+    </header>
+
+
+
+
+<p style="text-align: center; font-size: 18pt;"><strong>Formulaire de contact</strong></p>
+
+
+        <form name="contact"  onsubmit="return formulaireContact()">
+            <fieldset style="width: 50%; padding: 3%; margin:auto;" >
+                <legend style="background-color: #FFFF88;"><strong>Contactez-nous</strong></legend>
+                <table>
+                <tr>
+                    <td><label for="nom">Nom</label></td>
+                    <td><input type="text" id="nom" name="nom" value="" size="60"></td>
+                </tr>
+            <tr>
+                <td><label for="courriel">Courriel</label></td>
+                <td><input type="text" name="courriel" size="60" id="courriel" value=""> </td>
+            </tr>
+            <tr>
+                <td><label for="telephone">Téléphone</label></td>
+                <td><input type="text" id="telephone" name="telephone" size="25" value=""></label> (facultatif)</td>
+
+            </tr>
+            <tr>
+            <td>
+                <label for="sujet">Titre du message</label>
+            </td>
+            <td>
+                <select type="text" value="sujet" id="sujet" name="sujet" onchange="changePlaceholder()">
+                    <option value="">Choisissez un titre</option>
+                    <option value="valeur1">Information sur un produit </option>
+                    <option value="valeur2">Information sur une commande</option>
+                    <option value="valeur3">Demande de devis </option>
+                    <option value="valeur4">Signaler un bug</option>
+                    <option value="autre">Autre</option>
+                </select>
+                
+                <style>
+                    select {
+                      margin-right: 3px;
+                    }
+                </style>
+
+                <input type="text" id="ici" name="ici" size="28" value=""  placeholder="">
+            </td>
+            </tr>
+
+        </table>
+
+            <br>
+
+            <div>
+                <label for="inputText"> Message :</label>
+                <br> 
+                <textarea id="inputText" rows="10" cols="63" ></textarea>
+            </div>
+
+            <div>
+                
+                    <label for="note">Note sur le site</label> 
+
+                <input type="radio" id="Nul" name="note" value="Nul">
+                    <label for="radio1">Nul</label>
+                <input type="radio" id="Insuffisant" name="note" value="Insuffisant">
+                    <label for="radio2">Insuffisant</label>
+                <input type="radio" id="Moyen" name="note" value="Moyen">
+                    <label for="radio3">Moyen</label>
+                <input type="radio" id="Bon" name="note" value="Bon">
+                    <label for="radio4">Bon</label>
+                <input type="radio" id="Très bon" name="note" value="Très bon">
+                    <label for="radio5">Très bon</label>
+                <br> <br>
+
+                <input type="checkbox" name="newsletter" id="checkbox1">
+                <label for="checkbox1">Recevoir la newsletter</label>
+            <br> <br>
+            </div>
+            
+            <!-- <button type="submit" value="Envoyer" name="submit">Envoyer</button> -->
+            <input type="submit" value="Envoyer" name="submit">
+        
+        </fieldset>     
+    </form>
+
+
+
+<!--início do footer-->
+<footer class="contain-footer">
+    
+    <div class="footer-left">
+    <p>&copyStrelitizia</p>
+    </div>
+
+    <nav>
+        <ul class="footer-right">
+            <li> <a href="index.html"> ACCUEIL </a></li>
+                <li> <a href="produits_liste.html">PRODUITS</a></li>
+                <li> <a href="contact.html">CONTACT</a></li>
+                <li> <a href="venue.html">OÙ NOUS TROUVER</a></li>
+        </ul>
+    </nav>
+</footer>
+
+
+
+
+</body>
+</html>
