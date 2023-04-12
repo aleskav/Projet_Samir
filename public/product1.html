@@ -15,8 +15,9 @@
 <div class="wrapper">  
 
 
-    <!-- entete -->
-  
+ <!-- entete -->
+<header>
+
   <div class="container-entete">
     
     <div class="logo">
@@ -27,7 +28,7 @@
   
       <div class="chercher">
         <form action="/search" method="get">
-        <input type="text" name="q" placeholder="Produit">
+        <input type="text" id="q" placeholder="Produit">
         <button type="submit"><strong>Chercher</strong> </button>
         </form>
       </div>
@@ -62,18 +63,18 @@
           </li>
           <li ><a class="menu" href="produits_liste.html">Produits</a>
             <ul class="submenu">
-              <li><a href="#">Plantes</a></li>
-              <li><a href="#">Pots</a></li>
-              <li><a href="#">Ensembles</a></li>
+              <li><a href="/public/plantes.html">Plantes</a></li>
+              <li><a href="/public/pots.html">Pots</a></li>
+              <li><a href="/public/emsembles.html">Ensembles</a></li>
             </ul>
           </li>
           <li ><a class="menu" href="blog.html">Blog</a></li>
           <li ><a class="menu" href="contact.html">Contact</a></li>
           <li ><a class="menu" href="venue.html">Où nous trouver</a>
             <ul class="submenu">
-                <li><a  href="/public/montreal.html">Montréal</a></li>
-                <li><a  href="/public/chambly.html">Chambly</a></li>
-                <li><a  href="/public/quebec.html">Québec</a></li>
+              <li><a  href="/public/montreal.html">Montréal</a></li>
+              <li><a  href="/public/chambly.html">Chambly</a></li>
+              <li><a  href="/public/quebec.html">Québec</a></li>
             </ul>
           </li>
        </ul>
@@ -81,6 +82,7 @@
   
     </div>  
   
+  </header>
   
     <!-- <div class="divider"></div> -->
   
@@ -89,7 +91,7 @@
     <script src="js/nav.js"></script>   -->
   
   
-  
+
   
   
     <!-- fin entete -->
